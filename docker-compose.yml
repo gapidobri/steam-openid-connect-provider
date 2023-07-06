@@ -9,7 +9,7 @@ services:
         build: ./develop/proxy
         container_name: proxy
         ports:
-            - 2080:80
+            - 2080:280
         links:
             - keycloak
             - steamidp
