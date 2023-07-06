@@ -59,7 +59,7 @@ namespace SteamOpenIdConnectProvider.Services
                 AddClaim(claims, OpenIdStandardClaims.Nickname, player.PersonaName);
                 AddClaim(claims, OpenIdStandardClaims.PreferredUsername, player.PersonaName);
                 AddClaim(claims, OpenIdStandardClaims.GivenName, player.RealName);
-                AddClaim(claims, OpenIdStandardClaims.Email, player.steamId + "@coolmail.com");
+                AddClaim(claims, OpenIdStandardClaims.Email, steamId + "@coolmail.com");
                 AddClaim(claims, OpenIdStandardClaims.Website, player.ProfileUrl);
             }
 
