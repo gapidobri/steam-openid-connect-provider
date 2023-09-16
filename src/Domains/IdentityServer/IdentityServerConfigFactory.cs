@@ -35,6 +35,7 @@ namespace SteamOpenIdConnectProvider.Models.IdentityServer
                 {
                     IdentityServerConstants.StandardScopes.OpenId,
                     IdentityServerConstants.StandardScopes.Profile,
+                    IdentityServerConstants.StandardScopes.Email,
                 }
             };
             yield return client;
@@ -45,7 +46,8 @@ namespace SteamOpenIdConnectProvider.Models.IdentityServer
             return new List<IdentityResource>
             {
                 new IdentityResources.OpenId(),
-                new IdentityResources.Profile()
+                new IdentityResources.Profile(),
+                new IdentityResources.Email()
             };
         }
     }
